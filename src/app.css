@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Array-Wide';
+  src: url('/Array-Wide.woff2') format('woff2'),
+       url('/Array-Wide.woff') format('woff'),
+       url('/Array-Wide.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+.rise-wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+@keyframes rise {
+	0% {
+		transform: translate3d(0, 110%, 0);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+
+.rise-anim {
+	/*white-space: pre;*/
+	transform: translate3d(0, 110%, 0);
+	opacity: 0;
+	animation-name: rise;
+	animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	animation-duration: 1000ms;
+	animation-delay: var(--delay);
+	animation-fill-mode: forwards;
+}
