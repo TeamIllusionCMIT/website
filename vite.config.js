@@ -5,6 +5,10 @@ import { presetUno } from '@unocss/preset-uno';
 
 export default defineConfig({
 	plugins: [sveltekit(), UnoCSS({
-		presets: [presetUno()]
+		presets: [presetUno()],
+		rules: [
+			// cursor
+			[/^cursor-emoji-(\w+)$/, ([, w]) => ({ cursor: `url('/emojis/${w}.webp') 64 64, auto` })],
+		]
 	})]
 });
