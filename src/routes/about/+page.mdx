@@ -1,7 +1,7 @@
 ---
 title: Smoke and Mirrors
 date: '2023-4-2'
-image: /images/how-i-built-hero.webp
+image: /about.webp
 abstract: ''
 ---
 <script>
@@ -9,24 +9,28 @@ abstract: ''
 </script>
 
 <Background text="ABOUTUS"/>
-<div class="h-screen w-screen px-0 m-0" style="font-family: Array-Wide">
-    <header class="mx-auto flex flex-col items-center text-white lg:max-w-screen-xl w-screen h-screen">
+<div class="h-screen w-screen px-0 m-0" style="font-family: Inter">
+    <header class="mx-auto flex flex-col items-center text-white lg:max-w-screen-xl w-screen" style={`background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(rgba(2, 0, 36, 0) 0%, rgb(0, 0, 0) 100%), url(${image})`}>
         <div class="text-left w-2/3 mt-20">
             <h1 class="text-2xl my-0">{date}</h1>
-            <p class="text-7xl my-0 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">{title}</p>
-            <hr class="my-10 border-neutral-700"/>
-            <div class="prose text-lg">
-                At Team Illusion, we believe in the power of innovation, collaboration, transparency, and creativity to achieve our goals. Our team is more than just a robotics club-- it is a community of like-minded individuals who share a passion for science, technology, engineering, and mathematics.
-
-                We are committed to pushing the boundaries of what is possible in the field of robotics. We believe that technology can be used to make the world a better place, and we strive to create robots that can solve real-world problems. Our focus is on developing robots that are not only functional but also aesthetically pleasing and inspiring.
-
-                As a team, we value teamwork, communication, and leadership. We believe that every member of our team has a unique set of skills and talents that can contribute to our success. We encourage our members to think creatively, to take risks, and to learn from their failures.
-
-                We believe in the power of competition to drive innovation and excellence. We participate in competitions and events to test our skills and to learn from other teams. We also believe in giving back to our community by sharing our knowledge and expertise with others.
-
-                We believe that robotics can be used to make a positive impact on the world. Whether it is through developing robots that can assist with disaster relief, improving the quality of life for people with disabilities, or exploring new frontiers in space, we are committed to using our skills and expertise to make a difference.
+            <div class="rise-wrapper whitespace-pre w-fit font-800 -spacing-1 text-purple">
+                {#each title.split(" ") as word, index}
+                    <p class="rise-anim md:inline-flex block text-7xl my-0 font-800 -spacing-3 mt-6" style={`--delay: ${index * 200 + 100}ms`}
+                        >{`${word}`}{index !== title.length-1 ? " " : ""}</p>
+				{/each}
             </div>
+            <hr class="my-10 border-neutral-700"/>
         </div>
     </header>
+    <div class="prose text-xl text-white w-1/3 mx-auto">
+        At Team Illusion, we believe in the power of innovation, collaboration, transparency, and creativity to achieve our goals. Our team is more than just a robotics club-- it is a community of like-minded individuals who share a passion for science, technology, engineering, and mathematics.
 
+        We are committed to pushing the boundaries of what is possible in the field of robotics. We believe that technology can be used to make the world a better place, and we strive to create robots that can solve real-world problems. Our focus is on developing robots that are not only functional but also aesthetically pleasing and inspiring.
+
+        As a team, we value teamwork, communication, and leadership. We believe that every member of our team has a unique set of skills and talents that can contribute to our success. We encourage our members to think creatively, to take risks, and to learn from their failures.
+
+        We believe in the power of competition to drive innovation and excellence. We participate in competitions and events to test our skills and to learn from other teams. We also believe in giving back to our community by sharing our knowledge and expertise with others.
+
+        We believe that robotics can be used to make a positive impact on the world. Whether it is through developing robots that can assist with disaster relief, improving the quality of life for people with disabilities, or exploring new frontiers in space, we are committed to using our skills and expertise to make a difference.
+    </div>
 </div>
