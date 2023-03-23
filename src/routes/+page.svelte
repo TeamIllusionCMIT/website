@@ -1,6 +1,5 @@
 <script>
     import Background from "../components/Background.svelte";
-    import Rise from "../components/Rise.svelte";
     let links = [
         { href: "/about", text: "About" },
         { href: "/contact", text: "Contact" },
