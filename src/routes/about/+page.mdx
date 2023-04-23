@@ -1,32 +1,33 @@
----
-title: Smoke and Mirrors
-date: '2023-4-2'
-abstract: ''
----
-
 <script>
-	import Background from "../../components/Background.svelte"; import Link from
-	"../../components/Link.svelte"
+	import Background from "../../components/Background.svelte"
+    import Link from "../../components/Link.svelte"
+    import Image from "../../components/Link.svelte"
+    const date = '2023-4-2'
+    const title = "About Us"
 </script>
 
-<div class="min-h-screen w-screen px-0 m-0 bg-black" style="font-family: Inter">
-    <header class="mx-auto flex items-center text-white lg:max-w-screen-xl w-2/5">
+<div class="min-h-screen w-screen max-w-screen px-0 m-0 bg-black overflow-x-clip overscroll-x-none" style="font-family: Inter">
+    <header class="mx-auto flex items-center text-white lg:max-w-screen-xl w-2/5 overscroll-x-none">
         <div class="text-left mt-20">
-            <Link href="/" back>Back</Link>
             <h1 class="text-2xl my-0">{date}</h1>
-            <div class="rise-wrapper whitespace-pre w-fit font-800 -spacing-1 text-purple">
+            <div class="rise-wrapper whitespace-pre w-fit font-800 -spacing-1 text-[#6000ff]">
                 {#each title.split(" ") as word, index}
                     <p class="rise-anim md:inline-flex block text-5xl lg:text-7xl my-0 font-800 -spacing-3 mt-6" style={`--delay: ${index * 200 + 100}ms`}
                         >{`${word}`}{index !== title.length-1 ? " " : ""}</p>
 				{/each}
             </div>
-            <hr class="my-10 border-neutral-700 "/>
+            <hr class="my-10 border-neutral-700"/>
         </div>
     </header>
-    <div class="prose text-xl text-white w-2/5 mx-auto font-500 pb-10">
+    <div class="prose text-xl text-white w-2/5 mx-auto font-500 pb-10 overflow-x-clip overscroll-x-none">
         At Team Illusion, we believe in the power of innovation, collaboration, transparency, and creativity to achieve our goals. Our team is more than just a robotics club-- it is a community of like-minded individuals who share a passion for science, technology, engineering, and mathematics.
 
-        We are committed to pushing the boundaries of what is possible in the field of robotics. We believe that technology can be used to make the world a better place, and we strive to create robots that can solve real-world problems. Our focus is on developing robots that are not only functional but also aesthetically pleasing and inspiring.
+        We are committed to pushing the boundaries of what is possible in the field of robotics. We believe that technology can be used to make the world a better place, and we strive to create robots that can solve real-world problems. Our focus is on developing robots that are not only functional but excellent.
+
+        <div>
+            <img src="about.webp" alt="The full team" class="m-0"/>
+            <p class="m-0 text-neutral-400">The full team!</p>
+        </div>
 
         As a team, we value teamwork, communication, and leadership. We believe that every member of our team has a unique set of skills and talents that can contribute to our success. We encourage our members to think creatively, to take risks, and to learn from their failures.
 
