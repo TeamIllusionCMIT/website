@@ -1,4 +1,4 @@
-<iframe
+<div class="w-screen h-screen bg-black"><iframe
 	src="https://forms.fillout.com/t/eBEmMDDsadus"
 	width="100%"
 	height="100%"
@@ -8,3 +8,4 @@
 	title="Team Illusion Contact Form"
     class="h-screen w-screen"
 />
+</div>
