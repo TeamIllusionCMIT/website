@@ -3,7 +3,8 @@
     let links = [
         { href: "/about", text: "About" },
         { href: "/contact", text: "Contact" },
-        { href: "/finances", text: "Finances"}
+        { href: "/finances", text: "Finances"},
+        { href: "https://bank.hackclub.com/donations/start/teamillusion", text: "Donate"}
     ];
 </script>
 <Background/>
