@@ -3,7 +3,7 @@
     export let data;
 </script>
 
-<div class="h-screen w-screen bg-black" style="font-family: Inter">
+<div class="h-screen w-screen bg-black">
     <header class="mx-auto flex flex-col items-center justify-center text-white lg:max-w-screen-xl w-screen h-screen m-auto">
         <div class="text-left w-2/3">
             <p class="text-neutral-400 hover:text-white duration-500 text-2xl my-0 font-800 -spacing-1 ease-out">TEAM ILLUSION</p>
