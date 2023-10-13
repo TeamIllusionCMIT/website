@@ -1,10 +1,10 @@
-/** @type {import('./$types').PageLoad} */
-export async function load({ fetch, params }) {
-    const orgRes = await fetch("/api/finances/organization");
-    const org = await orgRes.json();
+import type { PageLoad } from './$types';
 
+export const load: PageLoad = async ({ fetch, params }) => {
     const transactionRes = await fetch("/api/finances/transactions");
     const transaction = await transactionRes.json();
 
-    return { org, transaction };
-}
+    return { transaction };
+};
+
+
