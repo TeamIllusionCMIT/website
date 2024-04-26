@@ -22,5 +22,10 @@
 				{/each}
             </div>
         </div>
+        <marquee direction="right" scrollamount="15">image placeholder</marquee>
     </header>
+</div>
+<div class="flex absolute bottom-5 w-screen items-center justify-center">
+    <div class=""></div>
+    <span class="font-spacemono text-neutral-500 font-bold">FRC 4464 • VEX 23098A + 23098B</span>
 </div>

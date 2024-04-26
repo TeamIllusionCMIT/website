@@ -13,6 +13,16 @@ body {
        font-style: normal;
 }
 
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('Space-Mono.woff2') format('woff2'),
+         url('Space-Mono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap
+}
+
 .rise-wrapper {
 	overflow: hidden;
 	position: relative;
