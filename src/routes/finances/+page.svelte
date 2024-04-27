@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     async function loadTransactions() {
       const transactionRes = await fetch("/api/finances/transactions");
       const transaction = await transactionRes.json();
@@ -6,6 +6,13 @@
       return { transaction };
     }
     let data = loadTransactions();
+    function formatDate(date: Date) {
+      return date.toLocaleDateString('en', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric'
+      });
+    }
 </script>
 
 {#await data}
@@ -55,7 +62,7 @@
               <tbody>
                 {#each data.transaction as transaction}
                   <tr class={`w-full ${transaction.amount_cents < 0 ? 'bg-[#110000]' : 'bg-[#001100]'}`}>
-                    <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-4">{transaction.date}</td>
+                    <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-4">{ formatDate(new Date(transaction.date))}</td>
                     <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-4">{transaction.memo}</td>
                     <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-4">{transaction.amount_cents < 0 ? "-": ""}${Math.abs(transaction.amount_cents/100).toFixed(2)}</td>
                   </tr>
