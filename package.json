@@ -29,6 +29,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@selemondev/svelte-marquee": "^0.0.2"
+    "@selemondev/svelte-marquee": "^0.0.2",
+    "rescript": "^11.1.0"
   }
 }
