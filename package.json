@@ -30,6 +30,7 @@
   "type": "module",
   "dependencies": {
     "@selemondev/svelte-marquee": "^0.0.2",
+    "@sveltejs/adapter-netlify": "^4.2.0",
     "rescript": "^11.1.0"
   }
 }
