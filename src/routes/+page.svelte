@@ -3,7 +3,7 @@
 	import { Marquee } from '@selemondev/svelte-marquee';
 	import '@selemondev/svelte-marquee/dist/style.css';
 	let links = [
-		{ href: '/about', text: 'About' },
+		// { href: '/about', text: 'About' },
 		{ href: '/contact', text: 'Contact' },
 		{ href: '/finances', text: 'Finances' },
 		{ href: 'https://bank.hackclub.com/donations/start/teamillusion', text: 'Donate' }
@@ -28,12 +28,10 @@
 		}
 	];
 </script>
-<Background first={true}/>
 
-<div class="h-screen w-screen" style="font-family: Inter">
-	<header
-		class="mx-auto flex flex-col items-center justify-center text-white lg:max-w-screen-xl w-screen h-screen m-auto overflow-x-clip"
-	>
+<Background text="TEAMILLUSION"/>
+<div class="section-wrapper">
+	<section class="section">
 		<div class="text-left w-3/4 md:w-2/3">
 			<h1
 				class="text-white opacity-60 hover:opacity-100 duration-500 text-2xl my-0 font-800 -spacing-1 ease-out"
@@ -56,8 +54,8 @@
 					>
 				{/each}
 			</div>
-		</div>
-	</header>
+			</div>
+		</section>
 	<div class="flex absolute bottom-10 w-screen items-center justify-center">
 		<span class="font-spacemono text-neutral-500 font-bold px-5 text-center hover:text-white duration-500 ease-out"
 			>FRC Team 4464 • VRC Team 23098A/23098B</span
@@ -68,9 +66,9 @@
 <hr class="border-neutral-600 mx-auto opacity-40 w-1/4" />
 <!-- sponsors -->
 <Background text="SPONSORS"/>
-<div class="h-screen w-screen" style="font-family: Inter">
+<div class="section-wrapper">
 	<main
-		class="mx-auto flex flex-col items-center justify-center text-white lg:max-w-screen-xl w-screen h-screen m-auto overflow-x-clip"
+		class="section"
 	>
 		<div class="text-left w-3/4 md:w-2/3">
 			<h1
@@ -88,7 +86,7 @@
 			</p>
 		</div>
 		<div
-			class="bg-neutral-600 bg-opacity-10 backdrop-blur-md max-w-4/5 p-10 my-10 rounded-xl text-center"
+			class="bg-neutral-600 bg-opacity-10 backdrop-blur-md w-screen md:max-w-4/5 p-10 my-10 rounded-xl text-center"
 		>
 			<div class="md:flex justify-center flex-wrap flex-gap-10 hidden">
 				{#each sponsors as { logo, url, name }}
@@ -118,9 +116,9 @@
 </div>
 <hr class="border-neutral-600 mx-auto opacity-40 w-1/4" />
 <Background text="ABOUT"/>
-<div class="h-screen w-screen" style="font-family: Inter">
+<div class="section-wrapper">
 	<main
-		class="mx-auto flex flex-col items-center justify-center text-white lg:max-w-screen-xl w-screen h-screen m-auto overflow-x-clip"
+		class="section"
 	>
 		<div class="text-left w-3/4 md:w-2/3">
 			<h1
