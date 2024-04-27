@@ -116,8 +116,8 @@
 </div>
 <hr class="border-neutral-600 mx-auto opacity-40 w-1/4" />
 <Background text="ABOUT"/>
-<div class="section-wrapper">
-	<main
+<div class="section-wrapper relative">
+	<section
 		class="section"
 	>
 		<div class="text-left w-3/4 md:w-2/3">
@@ -136,5 +136,10 @@
 			</p>
             <a href="about" style="letter-spacing: -0.5px" class="text-2xl button"><img src="message.svg" alt="paperclip denoting an attachment" class="h-[2em] text-xl" />Learn more</a>
 		</div>
-	</main>
+	</section>
+	<div class="flex absolute bottom-10 w-screen items-center justify-center">
+		<span class="font-spacemono text-white opacity-50 px-5 text-center hover:opacity-100 duration-500 ease-out"
+			>Fiscally sponsored by <a href="https://hackclub.com/fiscal-sponsorship" class="text-[#ec3750] b-[#ec3750] b-b-1 hover:b-b-2">The Hack Foundation</a>. Nonprofit EIN: 81-2908499</span
+		>
+	</div>
 </div>
