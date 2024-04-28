@@ -186,7 +186,7 @@
 	<div class="flex absolute bottom-5 md:bottom-10 w-screen items-center justify-center">
 		<span
 			class="font-spacemono text-white opacity-50 px-5 text-center hover:opacity-100 duration-500 ease-out"
-		>
+		>Fiscally sponsored by <a href="https://hackclub.com/fiscal-sponsorship" class="text-[#ec3750] b-[#ec3750] b-b-1 hover:b-b-2">The Hack Foundation</a>. Nonprofit EIN: 81-2908499
 		</span>
 	</div>
 </div>
