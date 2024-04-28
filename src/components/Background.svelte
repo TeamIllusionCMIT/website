@@ -1,6 +1,9 @@
 <script>
+// biome-ignore lint/style/useConst: this actually does get redefined
 export let text = "TEAMILLUSION";
+// biome-ignore lint/style/useConst: this actually does get redefined
 export let first = false;
+// biome-ignore lint/style/useConst: this actually does get redefined
 export let last = false;
 const _text = text.repeat(500);
 </script>
