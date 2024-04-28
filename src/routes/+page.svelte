@@ -19,7 +19,7 @@
 				class="text-5xl md:text-7xl my-0 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 font-800 -spacing-3"
 			>
 				<p class="md:custom-hidden inline">CMIT North's</p>
-				 official VEX and FIRST robotics team.
+				official VEX and FIRST robotics team.
 			</h2>
 			<div
 				class="rise-wrapper whitespace-pre w-fit max-w-4/5 font-800 -spacing-1 flex flex-wrap flex-row"
@@ -148,9 +148,10 @@
 			<form
 				name="contact"
 				method="POST"
-				data-netlify="true"
+				action="https://api.web3forms.com/submit"
 				class="flex flex-col flex-gap-2 mt-2 font-[Inter] font-bold -spacing-1 text-lg text-neutral-500"
 			>
+				<input type="hidden" name="access_key" value="1eb85c3f-619e-4fb1-80c1-a8ca6c2c30bf" />
 				<input
 					type="text"
 					name="name"
