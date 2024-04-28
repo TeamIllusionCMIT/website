@@ -1,6 +1,6 @@
 <script>
-    import "../app.css";
-    import "virtual:uno.css"
+import "virtual:uno.css";
+import "../app.css";
 </script>
 <a href="/">
     <div class="fixed top-5 right-5 md:top-15 md:right-15 z-999">

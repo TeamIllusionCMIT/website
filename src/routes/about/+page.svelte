@@ -1,6 +1,6 @@
 <script>
-    const date = 'April 2, 2023'
-    const title = "About Us"
+const date = "April 2, 2023";
+const title = "About Us";
 </script>
 
 <div class="min-h-screen max-w-screen px-0 m-0 overflow-x-clip overscroll-x-none" style="font-family: Inter">

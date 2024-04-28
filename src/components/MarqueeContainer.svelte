@@ -1,8 +1,8 @@
 <!-- MarqueeContainer.svelte -->
 <script>
-  import Marquee from './Marquee.svelte';
+import Marquee from "./Marquee.svelte";
 
-  const marqueeDirections = ['left', 'right'];
+const marqueeDirections = ["left", "right"];
 </script>
 
 <div class="marquee-container">

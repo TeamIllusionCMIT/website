@@ -1,9 +1,9 @@
 <script>
-	import Background from '../components/Background.svelte';
-	import { Marquee } from '@selemondev/svelte-marquee';
-	import '@selemondev/svelte-marquee/dist/style.css';
-	import links from "../data/links.json";
-	import sponsors from "../data/sponsors.json"
+import { Marquee } from "@selemondev/svelte-marquee";
+import "@selemondev/svelte-marquee/dist/style.css";
+import Background from "../components/Background.svelte";
+import links from "../data/links.json";
+import sponsors from "../data/sponsors.json";
 </script>
 
 <Background text="TEAMILLUSION"/>

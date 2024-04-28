@@ -1,18 +1,18 @@
 <script lang="ts">
-    async function loadTransactions() {
-      const transactionRes = await fetch("/api/finances/transactions");
-      const transaction = await transactionRes.json();
+async function loadTransactions() {
+	const transactionRes = await fetch("/api/finances/transactions");
+	const transaction = await transactionRes.json();
 
-      return { transaction };
-    }
-    let data = loadTransactions();
-    function formatDate(date: Date) {
-      return date.toLocaleDateString('en', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric'
-      });
-    }
+	return { transaction };
+}
+const data = loadTransactions();
+function formatDate(date: Date) {
+	return date.toLocaleDateString("en", {
+		month: "short",
+		day: "numeric",
+		year: "numeric",
+	});
+}
 </script>
 
 {#await data}

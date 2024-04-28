@@ -1,7 +1,7 @@
 <script>
-    export let text = "TEAMILLUSION";
-    export let first = false;
-    let _text = text.repeat(500)
+export const text = "TEAMILLUSION";
+export const first = false;
+const _text = text.repeat(500);
 </script>
 
 

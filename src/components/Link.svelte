@@ -1,7 +1,7 @@
 <script lang="ts">
-	export let href: string;
-    export let away: boolean = false;
-    export let back: boolean = false;
+export let href: string;
+export const away: boolean = false;
+export const back: boolean = false;
 </script>
 
 {#if back}
