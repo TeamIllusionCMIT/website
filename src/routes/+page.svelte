@@ -1,9 +1,15 @@
 <script>
+	import { onMount } from 'svelte';
 	import { Marquee } from '@selemondev/svelte-marquee';
 	import '@selemondev/svelte-marquee/dist/style.css';
 	import Background from '../components/Background.svelte';
 	import links from '../data/links.json';
 	import sponsors from '../data/sponsors.json';
+	let contactForm;
+	onMount(() => {
+		contactForm.reset()
+	});
+
 </script>
 
 <Background text="TEAMILLUSION" first={true} />
@@ -150,6 +156,8 @@
 				method="POST"
 				action="https://api.web3forms.com/submit"
 				class="flex flex-col flex-gap-2 mt-2 font-[Inter] font-bold -spacing-1 text-lg text-neutral-500"
+				id="contact-form"
+				bind:this={contactForm}
 			>
 				<input type="hidden" name="access_key" value="1eb85c3f-619e-4fb1-80c1-a8ca6c2c30bf" />
 				<input
@@ -164,20 +172,13 @@
 					placeholder="Email"
 					class="bg-neutral-800 rounded-lg text-md py-2 pl-4 b-neutral-700 b-none font-[Inter] font-bold -spacing-1 text-lg text-white"
 				/>
+				<input type="text" name="subject" placeholder="Subject" class="bg-neutral-800 rounded-lg text-md py-2 pl-4 b-neutral-700 b-none font-[Inter] font-bold -spacing-1 text-lg text-white"/>
+
 				<textarea
 					name="message"
 					placeholder="Message"
 					class="bg-neutral-800 rounded-lg text-md py-2 pl-4 b-neutral-700 b-none font-[Inter] font-bold -spacing-1 text-lg text-white"
 				></textarea>
-				<select
-					name="purpose"
-					class="bg-neutral-800 rounded-lg text-md py-2 pl-4 font-bold -spacing-1 text-lg text-white"
-				>
-					<!-- <option value="" disabled selected class="text-neutral-500">Contact Reason</option> -->
-					<option value="general" class="text-white">General Inquiry</option>
-					<option value="sponsorship">Sponsorships</option>
-					<option value="other">Other</option>
-				</select>
 				<button type="submit" class="button mt-0 rounded-lg">Submit</button>
 			</form>
 		</div>
