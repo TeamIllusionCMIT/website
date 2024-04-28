@@ -1,35 +1,34 @@
 {
-	"name": "illusion",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
-	},
-	"devDependencies": {
-		"@biomejs/biome": "1.7.1",
-		"@sveltejs/adapter-auto": "^3.2.0",
-		"@sveltejs/kit": "^2.5.7",
-		"@unocss/preset-uno": "^0.59.4",
-		"eslint": "^9.1.1",
-		"eslint-config-biome": "^1.5.3",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"svelte": "^4.2.1",
-		"svelte-check": "^3.5.2",
-		"svelte-preprocess": "^5.0.4",
-		"typescript": "^5.2.2",
-		"unocss": "^0.59.4",
-		"vite": "^5.2.10"
-	},
-	"type": "module",
-	"dependencies": {
-		"@selemondev/svelte-marquee": "^0.0.2",
-		"@sveltejs/adapter-netlify": "^4.2.0",
-		"rescript": "^11.1.0"
-	}
+  "name": "illusion",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.1",
+    "@sveltejs/adapter-auto": "^3.2.0",
+    "@sveltejs/kit": "^2.5.7",
+    "@unocss/preset-uno": "^0.59.4",
+    "eslint": "^9.1.1",
+    "eslint-config-biome": "^1.5.3",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "svelte": "^4.2.1",
+    "svelte-check": "^3.5.2",
+    "svelte-preprocess": "^5.0.4",
+    "typescript": "^5.2.2",
+    "unocss": "^0.59.4",
+    "vite": "^5.2.10"
+  },
+  "type": "module",
+  "dependencies": {
+    "@selemondev/svelte-marquee": "^0.0.2",
+    "@sveltejs/adapter-netlify": "^4.2.0"
+  }
 }
