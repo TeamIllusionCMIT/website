@@ -2,31 +2,8 @@
 	import Background from '../components/Background.svelte';
 	import { Marquee } from '@selemondev/svelte-marquee';
 	import '@selemondev/svelte-marquee/dist/style.css';
-	let links = [
-		// { href: '/about', text: 'About' },
-		{ href: '/contact', text: 'Contact' },
-		{ href: '/finances', text: 'Finances' },
-		{ href: 'https://bank.hackclub.com/donations/start/teamillusion', text: 'Donate' }
-	];
-
-	let sponsors = [
-		{
-			logo: 'sponsors/eba-engineering.svg',
-			url: 'https://ebaengineering.com',
-			name: 'EBA Engineering'
-		},
-		{ logo: 'sponsors/first.avif', url: 'https://www.firstinspires.org/', name: 'FIRST' },
-		{
-			logo: 'sponsors/hcb.svg',
-			url: 'https://hackclub.com/fiscal-sponsorship/',
-			name: 'Hack Club Bank'
-		},
-		{
-			logo: 'sponsors/clf.avif',
-			url: 'https://clfmd.org/',
-			name: 'Chesapeake Lighthouse Foundation'
-		}
-	];
+	import links from "../data/links.json";
+	import sponsors from "../data/sponsors.json"
 </script>
 
 <Background text="TEAMILLUSION"/>
