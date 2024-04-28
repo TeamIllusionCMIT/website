@@ -116,7 +116,7 @@ import sponsors from "../data/sponsors.json";
 			<p class="-spacing-1 text-xl mt-1">
 				At Team Illusion, we believe in the power of innovation, collaboration, transparency, and creativity to create change. Our team is more than just a robotics club-- it is a diverse community of like-minded individuals who share a passion for science, technology, engineering, and mathematics.
 			</p>
-            <a href="about" style="letter-spacing: -0.5px" class="text-2xl button"><img src="message.svg" alt="paperclip denoting an attachment" class="h-[2em] text-xl" />Learn more</a>
+            <a href="about" style="letter-spacing: -0.5px" class="text-2xl button"><img src="message.svg" alt="paperclip denoting an attachment" class="h-[2em] text-xl" />About us</a>
 		</div>
 	</section>
 </div>
