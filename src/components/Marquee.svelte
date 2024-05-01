@@ -1,6 +1,6 @@
 <!-- Marquee.svelte -->
 <script>
-  export let direction = 'left';
+export const direction = "left";
 </script>
 
 <marquee direction={direction}>

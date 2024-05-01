@@ -1,0 +1,22 @@
+[
+	{
+		"logo": "sponsors/eba-engineering.svg",
+		"url": "https://ebaengineering.com",
+		"name": "EBA Engineering"
+	},
+	{
+		"logo": "sponsors/first.avif",
+		"url": "https://www.firstinspires.org/",
+		"name": "FIRST"
+	},
+	{
+		"logo": "sponsors/hcb.svg",
+		"url": "https://hackclub.com/fiscal-sponsorship/",
+		"name": "Hack Club Bank"
+	},
+	{
+		"logo": "sponsors/clf.avif",
+		"url": "https://clfmd.org/",
+		"name": "Chesapeake Lighthouse Foundation"
+	}
+]

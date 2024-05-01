@@ -1,7 +1,7 @@
 <script lang="ts">
-    export let text: string;
-    export let _class: string = "";
-    export let text_class: string = "";
+export let text: string;
+export const _class: string = "";
+export const text_class: string = "";
 </script>
 
 <div class={`rise-wrapper whitespace-pre w-fit ${_class}`}>
