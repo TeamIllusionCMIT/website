@@ -68,16 +68,9 @@ onMount(() => {
 		<div
 			class="bg-[neutral-600] bg-opacity-20 backdrop-blur-md w-screen md:max-w-4/5 p-10 my-10 rounded-xl text-center"
 		>
-			<div class="md:flex justify-center flex-wrap flex-gap-10 hidden">
-				{#each sponsors as { logo, url, name }}
-					<a href={url} target="_blank" class="hover-scale-110 scale-100 duration-250 ease-out">
-						<img src={logo} height="100" alt={name} class="h-30 w-content" />
-					</a>
-				{/each}
-			</div>
-			<div class="md:hidden">
+			<div>
 				<Marquee
-					class="md:hidden py-2 -ml-20 w-screen [--duration:15s]"
+					class="py-2 w-full [--duration:15s]"
 					fade={true}
 					pauseOnHover={true}
 				>
@@ -87,7 +80,7 @@ onMount(() => {
 							target="_blank"
 							class="hover-scale-110 scale-100 duration-250 ease-out mx-2"
 						>
-							<img src={logo} height="100" alt={name} class="h-30" />
+							<img src={`sponsors/${logo}`} height="100" alt={name} class="h-30" />
 						</a>
 					{/each}
 				</Marquee>
