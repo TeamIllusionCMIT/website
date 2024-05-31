@@ -1,22 +1,27 @@
 [
 	{
-		"logo": "sponsors/eba-engineering.svg",
+		"logo": "eba-engineering.svg",
 		"url": "https://ebaengineering.com",
 		"name": "EBA Engineering"
 	},
 	{
-		"logo": "sponsors/first.avif",
+		"logo": "first.avif",
 		"url": "https://www.firstinspires.org/",
 		"name": "FIRST"
 	},
 	{
-		"logo": "sponsors/hcb.svg",
+		"logo": "hcb.svg",
 		"url": "https://hackclub.com/fiscal-sponsorship/",
 		"name": "Hack Club Bank"
 	},
 	{
-		"logo": "sponsors/clf.avif",
+		"logo": "clf.avif",
 		"url": "https://clfmd.org/",
 		"name": "Chesapeake Lighthouse Foundation"
+	},
+	{
+		"logo": "stantec.svg",
+		"url": "https://www.stantec.com/",
+		"name": "Stantec"
 	}
 ]
