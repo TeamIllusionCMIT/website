@@ -5,10 +5,6 @@ export default defineConfig({
 	presets: [presetUno()],
 	rules: [
 		// cursor
-		[
-			/^cursor-emoji-(\w+)$/,
-			([, w]) => ({ cursor: `url('/emojis/${w}.webp') 64 64, auto` }),
-		],
 		[/^spacing-(\d)$/, ([, d]) => ({ "letter-spacing": `${d}px` })],
 		["font-spacemono", { "font-family": "Space Mono" }],
 	],
