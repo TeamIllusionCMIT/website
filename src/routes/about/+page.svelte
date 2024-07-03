@@ -1,6 +1,7 @@
 <script>
 const date = "April 2, 2023";
 const title = "About Us";
+import clubImage from "$lib/images/about.webp";
 </script>
 
 <div class="min-h-screen max-w-screen px-0 m-0 overflow-x-clip overscroll-x-none" style="font-family: Inter">
@@ -21,7 +22,7 @@ const title = "About Us";
 
         We're committed to diversity and inclusivity and it's reflected in our demographic statistics. ~50% of our team is male, and we are all people of color. By embracing a range of perspectives and experiences, Team Illusion approaches problems in new and innovative ways. We wish to set an example for other groups in STEM.
 
-        <img src="about.webp" class="object-center h-auto max-w-full rounded-xl mt-7" alt="the team in 2023">
+        <img src={clubImage} class="object-center h-auto max-w-full rounded-xl mt-7" alt="the team in 2023">
         <p class="mb-4 mt-0 text-neutral-100 brightness-25 hover:brightness-100 duration-1000 transition-ease-out">The full team!</p>
 
         As a team, we value teamwork, communication, and leadership. We believe that every member of our team has a unique set of skills and talents that can contribute to our success. We encourage our members to think creatively, to take risks, and to learn from their failures.
