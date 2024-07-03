@@ -1,5 +1,5 @@
 <script lang="ts">
-export let data;
+export let data: {pathname: string, transactions: {date: string, memo: string, amount_cents: number}[]};
 
 function formatDate(date: Date) {
 	return date.toLocaleDateString("en", {
@@ -25,7 +25,7 @@ function formatDate(date: Date) {
                   <th class="text-left text-xl md:text-3xl -spacing-1 p-3 border-1 b-t-none b-r-none border-solid border-black border-neutral-600">Amount</th>
                 </tr>
               </thead>
-              {#await data.finances}
+              {#await data.transactions}
               <tbody>
                 <tr class="w-full bg-black">
                   <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-4">Please wait!</td>

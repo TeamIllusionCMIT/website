@@ -7,6 +7,6 @@ export function load({ fetch, setHeaders }) {
     }
 
 	return {
-		finances: get_data(),
+		transactions: get_data(),
 	};
 }
