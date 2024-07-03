@@ -7,8 +7,8 @@ export async function GET({ setHeaders }) {
 	);
 	const data = await res.json();
 	setHeaders({
-        'Cache-Control': 'max-age=43200'
-    });
+		"Cache-Control": "max-age=43200",
+	});
 
 	return json(data);
 }

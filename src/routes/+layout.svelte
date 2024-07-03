@@ -5,7 +5,7 @@ export let data;
 
 data.pathname;
 
-import { fade } from 'svelte/transition';
+import { fade } from "svelte/transition";
 </script>
 <a href="/">
     <div class="fixed top-5 right-5 md:top-15 md:right-15 z-999">

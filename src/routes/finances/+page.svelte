@@ -1,5 +1,8 @@
 <script lang="ts">
-export let data: {pathname: string, transactions: {date: string, memo: string, amount_cents: number}[]};
+export let data: {
+	pathname: string;
+	transactions: { date: string; memo: string; amount_cents: number }[];
+};
 
 function formatDate(date: Date) {
 	return date.toLocaleDateString("en", {
