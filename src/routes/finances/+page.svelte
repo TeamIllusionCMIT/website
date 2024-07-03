@@ -1,11 +1,6 @@
 <script lang="ts">
-async function loadTransactions() {
-	const transactionRes = await fetch("/api/finances/transactions");
-	const transaction = await transactionRes.json();
+export let data;
 
-	return { transaction };
-}
-const data = loadTransactions();
 function formatDate(date: Date) {
 	return date.toLocaleDateString("en", {
 		month: "short",
@@ -21,7 +16,7 @@ function formatDate(date: Date) {
             <p class="text-neutral-400 hover:text-white duration-500 text-2xl my-0 font-800 -spacing-1 ease-out">TEAM ILLUSION</p>
             <p class="text-5xl md:text-7xl my-0 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 font-800 -spacing-3">Finances</p>
         </div>
-        <div class="max-w-3/4 w-4xl overflow-x-auto my-2">
+        <div class="max-w-3/4 w-4xl overflow-x-auto my-2 max-h-50%">
             <table class="border-collapse border border-slate-500 w-full">
             <thead>
                 <tr>
@@ -30,7 +25,7 @@ function formatDate(date: Date) {
                   <th class="text-left text-xl md:text-3xl -spacing-1 p-3 border-1 b-t-none b-r-none border-solid border-black border-neutral-600">Amount</th>
                 </tr>
               </thead>
-              {#await data}
+              {#await data.finances}
               <tbody>
                 <tr class="w-full bg-black">
                   <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-4">Please wait!</td>
@@ -38,9 +33,9 @@ function formatDate(date: Date) {
                   <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-4">$0.00</td>
                 </tr>
             </tbody>
-              {:then data}
+              {:then transactions}
               <tbody>
-                {#each data.transaction as transaction}
+                {#each transactions as transaction}
                   <tr class={`w-full ${transaction.amount_cents < 0 ? 'bg-[#110000]' : 'bg-[#001100]'}`}>
                     <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-3">{ formatDate(new Date(transaction.date))}</td>
                     <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-3">{transaction.memo}</td>
@@ -50,7 +45,7 @@ function formatDate(date: Date) {
               </tbody>
               {/await}
             </table>
-            <p class="text-neutral-400 hover:text-white transition duration-500 ease-out">Data from <a href="https://bank.hackclub.com/teamillusion" class="text-inherit">Hack Club Bank</a></p>
-        </div>
+          </div>
+          <p class="text-neutral-400 hover:text-white transition duration-500 ease-out">Data from <a href="https://bank.hackclub.com/teamillusion" class="text-inherit">Hack Club Bank</a></p>
     </header>
 </div>
