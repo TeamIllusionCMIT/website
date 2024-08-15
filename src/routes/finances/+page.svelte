@@ -20,29 +20,29 @@ function formatDate(date: Date) {
             <p class="text-5xl md:text-7xl my-0 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 font-800 -spacing-3">Finances</p>
         </div>
         <div class="max-w-3/4 w-4xl overflow-x-auto my-2 max-h-50%">
-            <table class="border-collapse border border-slate-500 w-full">
+            <table class="border-collapse border-slate-800 w-full">
             <thead>
                 <tr>
-                  <th class="text-left text-xl md:text-3xl -spacing-1 p-3 border-1 b-t-none b-l-none border-solid border-black border-neutral-600">Date</th>
-                  <th class="text-left text-xl md:text-3xl -spacing-1 p-3 border-1 b-t-none border-solid border-black border-neutral-600">Memo</th>
-                  <th class="text-left text-xl md:text-3xl -spacing-1 p-3 border-1 b-t-none b-r-none border-solid border-black border-neutral-600">Amount</th>
+                  <th class="text-left text-xl md:text-3xl -spacing-1 p-3 border-1 b-t-none b-l-none border-solid border-black border-neutral-800">Date</th>
+                  <th class="text-left text-xl md:text-3xl -spacing-1 p-3 border-1 b-t-none border-solid border-black border-neutral-800">Memo</th>
+                  <th class="text-left text-xl md:text-3xl -spacing-1 p-3 border-1 b-t-none b-r-none border-solid border-black border-neutral-800">Amount</th>
                 </tr>
               </thead>
               {#await data.transactions}
               <tbody>
                 <tr class="w-full bg-black">
-                  <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-4">Please wait!</td>
-                  <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-4">Loading data...</td>
-                  <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-4">$0.00</td>
+                  <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-800 p-4">Please wait!</td>
+                  <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-800 p-4">Loading data...</td>
+                  <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-800 p-4">$0.00</td>
                 </tr>
             </tbody>
               {:then transactions}
               <tbody>
                 {#each transactions as transaction}
-                  <tr class={`w-full ${transaction.amount_cents < 0 ? 'bg-[#110000]' : 'bg-[#001100]'}`}>
-                    <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-3">{ formatDate(new Date(transaction.date))}</td>
-                    <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-3">{transaction.memo}</td>
-                    <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-600 p-3">{transaction.amount_cents < 0 ? "-": ""}${Math.abs(transaction.amount_cents/100).toFixed(2)}</td>
+                  <tr class={`w-full bg-neutral-950`}>
+                    <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-800 p-3">{ formatDate(new Date(transaction.date))}</td>
+                    <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-800 p-3">{transaction.memo}</td>
+                    <td class={`${transaction.amount_cents < 0 ? 'text-[#FF9999]' : 'text-[#CCFFCC]'} border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-800 p-3`}>{transaction.amount_cents < 0 ? "-": ""}${Math.abs(transaction.amount_cents/100).toFixed(2)}</td>
                   </tr>
                 {/each}
               </tbody>
