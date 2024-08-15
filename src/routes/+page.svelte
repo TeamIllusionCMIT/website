@@ -2,9 +2,9 @@
 import { onMount } from "svelte";
 import { Marquee } from "@selemondev/svelte-marquee";
 import "@selemondev/svelte-marquee/dist/style.css";
-import Background from "../components/Background.svelte";
-import links from "../data/links.json";
-import sponsors from "../data/sponsors.json";
+import Background from "$lib/components/Background.svelte";
+import links from "$lib/data/links.json";
+import sponsors from "$lib/data/sponsors.json";
 let contactForm: HTMLFormElement;
 onMount(() => {
 	contactForm.reset();
