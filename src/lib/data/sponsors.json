@@ -1,5 +1,15 @@
 [
 	{
+		"logo": "stantec.svg",
+		"url": "https://www.stantec.com/",
+		"name": "Stantec"
+	},
+	{
+		"logo": "ey3.svg",
+		"url": "https://ey3.tech/",
+		"name": "Ey3 Technologies"
+	},
+	{
 		"logo": "eba-engineering.svg",
 		"url": "https://ebaengineering.com",
 		"name": "EBA Engineering"
@@ -18,10 +28,5 @@
 		"logo": "clf.avif",
 		"url": "https://clfmd.org/",
 		"name": "Chesapeake Lighthouse Foundation"
-	},
-	{
-		"logo": "stantec.svg",
-		"url": "https://www.stantec.com/",
-		"name": "Stantec"
 	}
 ]

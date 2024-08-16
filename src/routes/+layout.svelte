@@ -3,8 +3,6 @@ import "virtual:uno.css";
 import "../app.css";
 export let data;
 
-data.pathname;
-
 import { fade } from "svelte/transition";
 </script>
 <a href="/">
