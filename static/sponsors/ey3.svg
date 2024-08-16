@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 95 95">
+  <defs>
+    <clipPath id=":R2sm:monogram-clip">
+      <path d="M32,34.04l-13.87,13.87,10.36,10.36-9.06,9.06L0,47.91,22.93,24.97l9.06,9.06h0Zm19.42,19.42l-8.37,8.37-9.06-9.06,8.37-8.37,9.06,9.06h0ZM47.91,0L24.97,22.93l9.06,9.06,13.87-13.87,10.36,10.36-13.87,13.87,9.06,9.06,13.87-13.87,10.36,10.36-13.87,13.87,9.06,9.06,22.94-22.93L47.91,0h0Zm22.93,72.88l-9.06-9.06-13.87,13.87-10.36-10.36-9.06,9.06,19.42,19.42,22.93-22.93Z" style="fill-rule:evenodd"></path>
+    </clipPath>
+  </defs>
+  <rect clip-path="url(#:R2sm:monogram-clip)" width="100%" height="100%" fill="white"></rect>
+  <g clip-path="url(#:R2sm:monogram-clip)">
+    <rect class="Monogram_highlight__Q9l22" width="100%" height="100%" fill="white"></rect>
+  </g>
+</svg>
