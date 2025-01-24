@@ -30,10 +30,10 @@ function formatDate(date: Date) {
               </thead>
               {#await data.transactions}
               <tbody>
-                <tr class="w-full bg-black">
-                  <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-800 p-4">Please wait!</td>
-                  <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-800 p-4">Loading data...</td>
-                  <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-800 p-4">$0.00</td>
+                <tr class="w-full bg-neutral-900 animate-pulse">
+                  <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-800 p-4 ">...</td>
+                  <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-800 p-4 ">Loading data...</td>
+                  <td class="border-1 -spacing-1 text-4 md:text-md font-semibold border-solid border-black border-neutral-800 p-4 ">$0.00</td>
                 </tr>
             </tbody>
               {:then transactions}
